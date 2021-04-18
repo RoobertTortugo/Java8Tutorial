@@ -1,6 +1,7 @@
 package Lambda;
 
 import Lambda.listas.OperacionesBasicasEnListas;
+import Lambda.map.MapBasico;
 
 import java.util.*;
 
@@ -55,12 +56,22 @@ public class LambdaApp{
         app.calcularPromedio();
         app.suma();*/
 
-        OperacionesBasicasEnListas list = new OperacionesBasicasEnListas();
+        /*OperacionesBasicasEnListas list = new OperacionesBasicasEnListas();
         list.fillList();
-        //list.ordenar();
-        //list.filtrar();
-        //list.transformar();
-        //list.limitar();
-        list.contar();
+        list.ordenar();
+        list.filtrar();
+        list.transformar();
+        list.limitar();
+        list.contar();*/
+
+        MapBasico mapBasico = new MapBasico();
+        mapBasico.poblar();
+        mapBasico.imprimir();
+        mapBasico.insrtarSiAusente();
+        mapBasico.imprimir();
+        mapBasico.operarSiPresente();
+        mapBasico.imprimir();
+        mapBasico.obtenerOrPredeterminado();
+        mapBasico.recolectar();
     }
 }
